@@ -1,0 +1,16 @@
+[
+{
+  "modid": "leapinmod",
+  "name": "Leap In Mod",
+  "description": "Random things create by Leap",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Leap"],
+  "credits": "Me & Myself",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
