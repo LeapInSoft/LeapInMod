@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=default": { "model": "leapinmod:first_double_slab" }
+    }
+}

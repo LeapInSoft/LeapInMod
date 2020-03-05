@@ -21,6 +21,9 @@ public class FirstBlock extends Block {
 
     @SideOnly(Side.CLIENT)
     public void initModel() {
-        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+        //ModelResourceLocation modelResourceLocation = new ModelResourceLocation(getRegistryName(), "inventory");
+        ModelResourceLocation modelResourceLocation = new ModelResourceLocation("dirt", "inventory");
+        
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, modelResourceLocation);
     }
 }

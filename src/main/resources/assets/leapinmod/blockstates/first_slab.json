@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom,variant=default": { "model": "leapinmod:bottom_slab" },
+        "half=top,variant=default": { "model": "leapinmod:upper_slab" }
+    }
+}
