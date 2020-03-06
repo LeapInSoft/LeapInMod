@@ -4,9 +4,11 @@ import eu.l34p.leapinmod.LeapBlocks;
 import eu.l34p.leapinmod.blocks.FirstBlock;
 import eu.l34p.leapinmod.blocks.FirstDoubleSlab;
 import eu.l34p.leapinmod.blocks.FirstHalfSlab;
+import eu.l34p.leapinmod.enchantments.EnchantmentImpact;
 import eu.l34p.leapinmod.items.FirstItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemSlab;
@@ -41,4 +43,9 @@ public class CommonProxy {
         event.getRegistry().register(new ItemSlab(LeapBlocks.firstHalfSlab, LeapBlocks.firstHalfSlab, LeapBlocks.firstDoubleSlab).setRegistryName(LeapBlocks.firstHalfSlab.getRegistryName()));
         event.getRegistry().register(new FirstItem());
     }
+
+    @SubscribeEvent
+	public static void registerEnchantments(RegistryEvent.Register<Enchantment> event) {
+		event.getRegistry().register(new EnchantmentImpact());
+	}
 }

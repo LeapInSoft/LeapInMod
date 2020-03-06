@@ -23,7 +23,7 @@ public class LeapInMod
     @Mod.Instance
     public static LeapInMod instance;
 
-    private static Logger logger;
+    public static Logger logger;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent fmlEvent)
@@ -37,6 +37,7 @@ public class LeapInMod
     {
         // some example code
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        logger.info("Impact Enchant >> {}", LeapEnchantments.impact.getRegistryName());
         proxy.init(fmlEvent);
     }
 
